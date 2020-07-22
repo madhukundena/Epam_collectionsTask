@@ -1,0 +1,43 @@
+package com.epam.collection1;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+	public class List
+	{
+	    public static void main(String args[])
+	    {
+	    	ArrayList<Integer> ar=new ArrayList<Integer>();
+	        Scanner s=new Scanner(System.in);
+	        int ch;
+	        while (s.hasNext())
+	        {
+	            ch=s.nextInt();
+	            if(ch==1)
+	            {
+	            	 ar.add(s.nextInt());
+	            }
+	            else if(ch==2)
+	            {
+	                System.out.println("Element is:"+ar.get(s.nextInt()));
+	            }
+	            else if(ch==3)
+	            {
+	                System.out.println("Position is:"+ar.indexOf(s.nextInt()));
+	            }
+	            else if(ch==4)
+	            {
+	            	ar.remove(ar.get(s.nextInt()));
+	            }
+	            else if(ch==5)
+	            {
+	            	 ar.remove(ar.get(ar.size()-1));
+	            }
+	            else
+	            {
+	            	System.out.print(ar);
+	    	        System.out.println();
+	            }
+	        }
+	    }
+	}
+	
